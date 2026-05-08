@@ -41,29 +41,29 @@ typography:
     fontWeight: 600
     lineHeight: 1.3
   body-lg:
-    fontFamily: Lato
+    fontFamily: Poppins
     fontSize: 1.0625rem
     fontWeight: 400
     lineHeight: 1.75
   body-md:
-    fontFamily: Lato
+    fontFamily: Poppins
     fontSize: 0.9375rem
     fontWeight: 400
     lineHeight: 1.65
   label-caps:
-    fontFamily: Lato
+    fontFamily: Poppins
     fontSize: 0.6875rem
     fontWeight: 700
     lineHeight: 1
     letterSpacing: 0.14em
   label-md:
-    fontFamily: Lato
+    fontFamily: Poppins
     fontSize: 0.8125rem
     fontWeight: 400
     lineHeight: 1.4
     letterSpacing: 0.02em
   nav:
-    fontFamily: Lato
+    fontFamily: Poppins
     fontSize: 0.875rem
     fontWeight: 400
     lineHeight: 1
@@ -204,7 +204,7 @@ that references terracotta, browned butter, and cinnamon — all bakery staples.
 ## Typography
 
 The type system uses two families with sharply distinct roles: **Playfair
-Display** for all editorial headings and **Lato** for all functional, body,
+Display** for all editorial headings and **Poppins** for all functional, body,
 and UI text. This pairing creates natural tension — the high-contrast serif
 feels like a food magazine while the clean sans grounds navigation and
 body copy.
@@ -219,17 +219,17 @@ scannability. Italic variants appear for stylistic emphasis in section headers
 like *"it's brunch season."* — always lowercase, always italic for these
 conversational moments.
 
-**Body & UI (Lato)**
+**Body & UI (Poppins)**
 
-Lato handles navigation, body copy, category labels, metadata, form fields,
+Poppins handles navigation, body copy, category labels, metadata, form fields,
 and all functional text. Its humanist warmth complements Playfair without
-competing. Category labels are set in Lato Bold ALL CAPS with generous
+competing. Category labels are set in Poppins Bold ALL CAPS with generous
 letter-spacing (0.14em) — this is the brand's "editorial voice" for
 classification, borrowed from magazine design conventions.
 
 **Key rules:**
 - Never use Playfair Display below 20px.
-- Category labels are ALWAYS uppercase Lato Bold with 0.14em tracking.
+- Category labels are ALWAYS uppercase Poppins Bold with 0.14em tracking.
 - Body copy line-height is never below 1.6 — this site breathes.
 - No third font family is permitted anywhere in the system.
 
@@ -296,7 +296,7 @@ The only exceptions are images that keep a full rectangular shape with 0px round
 ### Buttons
 
 The primary button is fully rounded (9999px radius), set in `label-caps`
-typography (Lato Bold Uppercase), with a deep warm brown background. It is
+typography (Poppins Bold Uppercase), with a deep warm brown background. It is
 used for primary CTAs: "Read Now", "Order Now", "Submit".
 
 The secondary button ("browse all recipes") is text-only with an underline
@@ -320,7 +320,7 @@ On hover, the recipe title text color shifts to `tertiary` (#C97B5A) at
 
 ### Category Labels
 
-Uppercase, Lato Bold, 0.6875rem, 0.14em letter-spacing, terracotta color
+Uppercase, Poppins Bold, 0.6875rem, 0.14em letter-spacing, terracotta color
 (#C97B5A). Used consistently above recipe card titles and inside the hero
 callout sections. Never placed below a title. Never inside the image.
 
@@ -334,7 +334,7 @@ photograph.
 
 ### Navigation
 
-Top navigation: horizontally centered Lato links at 0.875rem with 0.04em
+Top navigation: horizontally centered Poppins links at 0.875rem with 0.04em
 tracking. A top utility bar above the main nav holds social icons and a
 search trigger. The logo (SVG wordmark) is centered between nav link groups
 on desktop.
@@ -361,7 +361,7 @@ only component that uses a text-on-image pattern.
 **Do's:**
 - Do use `neutral` (#FAF8F5) — not pure white — for all page backgrounds.
 - Do enforce the 2:3 portrait ratio on every recipe card image without exception.
-- Do set all category labels in uppercase Lato Bold with 0.14em letter-spacing
+- Do set all category labels in uppercase Poppins Bold with 0.14em letter-spacing
   and terracotta color — this is a load-bearing brand signal.
 - Do maintain a minimum 80px vertical gap between page sections on desktop.
 - Do use `primary` color (#2A2118) for all headlines to preserve warmth.
@@ -373,7 +373,7 @@ only component that uses a text-on-image pattern.
 **Don'ts:**
 - Don't add border-radius to images or cards.
 - Don't use more than two font families anywhere in the system (Playfair
-  Display + Lato only).
+  Display + Poppins only).
 - Don't use Playfair Display for body copy, captions, navigation, or labels.
 - Don't use drop shadows except for the single allowed scrolled-nav elevation.
 - Don't use pure black (#000000) for text — always use the warm primary

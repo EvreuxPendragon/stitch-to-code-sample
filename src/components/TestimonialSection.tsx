@@ -3,20 +3,20 @@ import { useState, useEffect, useCallback } from 'react'
 const testimonials = [
   {
     quote: '"El ambiente en Cafe Miel te obliga a bajar el ritmo. Su croissant de almendras es, sin exagerar, el mejor que he probado en la ciudad. Un refugio perfecto para las mañanas de fin de semana."',
-    name: 'Sofía R.',
+    name: 'Andrea Vasquez.',
     role: 'Cliente Frecuente',
     rating: 5,
   },
   {
     quote: '"Descubrí Cafe Miel por casualidad y ahora es mi ritual de cada domingo. El pour-over de origen guatemalteco es extraordinario — y el pan de masa madre, incomparable."',
-    name: 'Andrés M.',
+    name: 'Henry Ramos',
     role: 'Amante del Café',
     rating: 5,
   },
   {
     quote: '"Cada visita es una experiencia completa. Desde el aroma al entrar hasta la presentación de cada plato. Este lugar entiende lo que significa la calidad artesanal."',
-    name: 'Elena G.',
-    role: 'Repostera Amateur',
+    name: 'Mario Pon',
+    role: 'Repostero Amateur',
     rating: 5,
   },
 ]
@@ -104,11 +104,10 @@ export function TestimonialSection() {
             <button
               key={i}
               onClick={() => goTo(i)}
-              className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                i === current
+              className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${i === current
                   ? 'bg-brand-tertiary w-6'
                   : 'bg-brand-border hover:bg-brand-secondary w-2'
-              }`}
+                }`}
               aria-label={`Go to testimonial ${i + 1}`}
             />
           ))}

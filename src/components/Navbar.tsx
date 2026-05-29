@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 
 const navLinks = [
-  { label: 'Home', href: '#' },
-  { label: 'Menu', href: '#menu' },
-  { label: 'Story', href: '#story' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', href: '/' },
+  { label: 'Menu', href: '/menu' },
+  { label: 'Story', href: '/#story' },
+  { label: 'Contact', href: '/#contact' },
 ]
 
 export function Navbar() {
@@ -29,20 +30,20 @@ export function Navbar() {
     >
       <nav className="container-editorial flex items-center justify-between h-[72px]">
         {/* Logo */}
-        <a href="#" className="font-display text-2xl tracking-tight text-brand-primary">
+        <Link to="/" className="font-display text-2xl tracking-tight text-brand-primary">
           Cafe Miel
-        </a>
+        </Link>
 
         {/* Desktop Nav Links */}
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <li key={link.label}>
-              <a
-                href={link.href}
+              <Link
+                to={link.href}
                 className="text-nav text-brand-primary hover:text-brand-tertiary transition-colors duration-200"
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -83,14 +84,14 @@ export function Navbar() {
           <SheetContent side="right" className="bg-brand-neutral border-brand-border w-[300px] pt-16">
             <nav className="flex flex-col gap-6">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.label}
-                  href={link.href}
+                  to={link.href}
                   onClick={() => setOpen(false)}
                   className="text-nav text-brand-primary hover:text-brand-tertiary transition-colors duration-200 text-lg"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
               <Button className="bg-brand-primary text-brand-on-primary hover:bg-brand-tertiary text-label-caps rounded-full px-7 py-3 h-auto mt-4 transition-colors duration-200 cursor-pointer">
                 ORDENAR

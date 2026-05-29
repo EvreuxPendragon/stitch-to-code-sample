@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { ProductCard } from './ProductCard'
 
 import espressoImg from '@/assets/images/espresso.png'
@@ -73,8 +74,8 @@ export function FavoritesGrid() {
 
         {/* Browse All Link */}
         <div className="text-center mt-14">
-          <a
-            href="#menu"
+          <Link
+            to="/menu"
             className="inline-flex items-center gap-2 text-label-caps text-brand-primary hover:text-brand-tertiary transition-colors duration-200 group"
           >
             VER MENÚ COMPLETO
@@ -93,9 +94,10 @@ export function FavoritesGrid() {
               <path d="M5 12h14"/>
               <path d="m12 5 7 7-7 7"/>
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
   )
 }
+

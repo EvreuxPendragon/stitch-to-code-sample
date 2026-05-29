@@ -1,24 +1,15 @@
-import { Navbar } from '@/components/Navbar'
-import { Hero } from '@/components/Hero'
-import { FavoritesGrid } from '@/components/FavoritesGrid'
-import { StorySection } from '@/components/StorySection'
-import { TestimonialSection } from '@/components/TestimonialSection'
-import { InfoBar } from '@/components/InfoBar'
-import { Footer } from '@/components/Footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HomePage } from '@/pages/HomePage'
+import { MenuPage } from '@/pages/MenuPage'
 
 function App() {
   return (
-    <div className="min-h-screen bg-brand-neutral">
-      <Navbar />
-      <main>
-        <Hero />
-        <FavoritesGrid />
-        <StorySection />
-        <TestimonialSection />
-        <InfoBar />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/menu" element={<MenuPage />} />
+      </Routes>
+    </Router>
   )
 }
 
